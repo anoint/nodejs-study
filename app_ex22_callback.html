@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box {
+            position: absolute;
+            border: 1px solid red;
+            background-color:yellow;
+            width: 100px;
+            height: 100px;
+            left: 0px;
+        }
+    </style> 
+     <script>
+         // 인터프리터 방식이므로 onload함수 추가함.
+      var move = function  move(selector, target, callback) {
+        var box = document.querySelector(selector);
+          box.callback = callback;
+          console.dir(box);
+             var x = 0;
+             
+             var fn = setInterval( function() {
+             x+= 10;
+                 box.style.left = x + 'px';
+                 if( x >= target)
+                     {
+                         clearInterval(fn); 
+                         box.callback();
+                         //callback함수가 box객체의 멤버가 됬다.
+                     }
+             },1000/30);
+         };
+           window.onload = function() {
+               move('#box',300, function () {
+//                   alert('동작그만!');
+                   console.log(this);
+                    this.style.backgroundColor = 'dodgerblue';
+                   this.style.width = this.style.height = '200px';
+               });
+           }
+    </script>
+</head>
+<body>
+    <div id="box">Box</div>
+    
+</body>
+</html>

@@ -3,3 +3,8 @@ npm install               외장모듈 설치 package-lock.json, node_modules
 npm install nconf --save  nconf 외장모듈 설치 후 package.json에 저장
 
 폴더선택 -> shift + 마우스 우클릭 -> power shell 열기
+
+shell 명령어
+파일명 tab키 누르면 자동완성된다.
+
+
