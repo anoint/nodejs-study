@@ -1,0 +1,3 @@
+yoojoo-jina
+
+read,write true 설정

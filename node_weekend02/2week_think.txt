@@ -1,0 +1,30 @@
+파일싱크와 파일리드 차이는?
+컨텐트 타입의 종류는?
+키보드 키감이 부드럽다.
+anyzen 키보드 사고싶다.
+모듈 호출 자동완성방법은?
+MEAN stack
+incurt, saramin high value
+http router 
+view 엔진 
+use는 무엇인가?
+크로스 도메인
+: 아이프레임
+node header 설정
+cors 모듈
+
+실수, 오타 단어
+destroy
+패스앞에 / 붙여야됨 
+
+firebase logout
+
+
+firebase.json에 
+7번 추가 
+ "rewrites": [
+      {
+        "source": "**",
+        "function": "app"
+      }
+    ]
