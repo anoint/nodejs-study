@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Document</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="container">
+    <h2>사용자 추가 페이지</h2>
+   
+       
+     <form action="/process/adduser" method="post">
+           <table class="table" width="100%">
+               <tr>
+                   <th>ID</th>
+                   <td><input type="text" name="id"></td>
+               </tr>
+               <tr>
+                   <th>Password</th>
+                   <td><input type="password" name="password"></td>
+               </tr>
+                <tr>
+                   <th>name</th>
+                   <td><input type="text" name="name"></td>
+               </tr>
+               <tr>
+                   <th colspan="2">
+                   <input type="submit" name="submit" value="전송"></th>
+               </tr>
+           </table>
+    </form>
+</div>
+</body>
+</html>
